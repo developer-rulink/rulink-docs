@@ -13,7 +13,7 @@
 
 Сервис доступен как через веб-интерфейс, так и через API. В данной документации вы найдете подробные инструкции по обоим способам работы с нашим сервисом.
 
-Полное описание API доступно по ссылке [https://rulink.io/api/crypto/v1/swagger](https://rulink.io/api/crypto/v1/swagger)
+Полное описание API доступно по ссылке [https://rulink.io/api/v1/crypto/swagger/](https://rulink.io/api/v1/crypto/swagger/index.html)
 
 Также достуны клиенты для работы с сервисом на разных языках программирования:  
 
@@ -24,13 +24,3 @@ C#
 [//]: # (Java  )
 
 [//]: # (Python  )
-
-
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
