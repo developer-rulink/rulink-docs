@@ -29,9 +29,17 @@
   <figcaption>Результат проверки подписи</figcaption>
 </figure>
 
-Проверка выполняется по следующим параметрам:  
+Проверка выполняется по следующим параметрам:
+
 - [x] Подпись на соответствие документу
 - [x] Подпись выполнена в период действия сертификата
 - [x] Подпись выдана аккредитованным удостоверяющим центром
 - [x] Подпись не отозвана
 
+
+- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+- [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In hac habitasse platea dictumst
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [ ] Praesent sed risus massa
+- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
