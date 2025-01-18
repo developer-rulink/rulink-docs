@@ -10,7 +10,7 @@
 Нажмите кнопку "Проверить".  
 
 <figure markdown="span">
-  ![Image title](https://rulink.io/images/image-001.png){ width="500" }
+  ![Image title](https://rulink.io/images/image-002.png){ width="500" }
   <figcaption>Проверка электронной подписи</figcaption>
 </figure>
 
