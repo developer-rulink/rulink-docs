@@ -8,6 +8,12 @@
     При редактировании файла подписи вы можете изменить содержимое файла, но не саму подпись.  
     После изменения файла подпись станет недействительной.
 
+??? note
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
 ==Загрузите файл с данными==, например PDF-документ, и файл с подписью.  
 После этого появится возможность загрузить файл электронной подписи.
 
