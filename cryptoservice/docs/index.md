@@ -15,12 +15,3 @@
 
 Полное описание API доступно по ссылке [https://rulink.io/api/v1/crypto/swagger/](https://rulink.io/api/v1/crypto/swagger/index.html)
 
-Также достуны клиенты для работы с сервисом на разных языках программирования:  
-
-C#   
-
-[//]: # (Go  )
-
-[//]: # (Java  )
-
-[//]: # (Python  )
