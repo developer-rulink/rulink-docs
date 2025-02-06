@@ -33,3 +33,9 @@
 - ОКС - объектов капитального строительства (зданий)
 - ЗУ - земельных участков
 
+### Интеграция по API
+Все наши сервисы разработаны с подходом API-First и доступны для интеграции.  
+Описание API доступно тут: [https://cadastral.rulink.io/api/v1/swagger](https://cadastral.rulink.io/api/v1/swagger)  
+Запросить APIKEY можно по адресу [hello@rulink.io](email:hello@rulink.io)
+
+
