@@ -15,6 +15,9 @@
 
 Нажмите кнопку =="Проверить"==.  
 
+!!! info "Кстати"
+    Этот функционал можно использовать бесплатно и без регистрации. (Работает тут)[https://rulink.io/crypto/verification]
+
 <figure markdown="span">
   ![Загрузка файлов для проверки](https://rulink.io/images/image-002.png){ width="500" }
   <figcaption>Проверка электронной подписи</figcaption>

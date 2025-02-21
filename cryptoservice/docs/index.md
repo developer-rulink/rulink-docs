@@ -19,7 +19,7 @@
 Запросить APIKEY можно по адресу [hello@rulink.io](email:hello@rulink.io)
 
 ### Ссылки
-Описание сервиса: [https://promo.rulink.io/crypto](https://promo.rulink.io/crypto)  
 Сервис: [https://rulink.io/crypto/verification](https://rulink.io/crypto/verification)  
-Поддержка по сервису [https://rulink.io/support/crypto](https://rulink.io/support/crypto)  
+Описание сервиса: [https://promo.rulink.io/crypto](https://promo.rulink.io/crypto)  
+Поддержка по сервису: [https://rulink.io/support/crypto](https://rulink.io/support/crypto)  
 API: [https://rulink.io/api/v1/crypto/swagger](https://rulink.io/api/v1/crypto/swagger) 
