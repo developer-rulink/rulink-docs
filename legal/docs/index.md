@@ -3,3 +3,7 @@
 - [пользовательское соглашение](acception.md)
 - [политика обработки персональных данных](confidentiality.md)
 
+### Ссылки
+Сервисы: [https://rulink.io/](https://rulink.io/)  
+
+

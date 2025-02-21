@@ -39,7 +39,7 @@
 Запросить APIKEY можно по адресу [hello@rulink.io](email:hello@rulink.io)
 
 ### Ссылки
-Описание сервиса: [https://promo.rulink.io/cadastral](https://promo.rulink.io/cadastral)  
 Сервис: [https://cadastral.rulink.io](https://cadastral.rulink.io)  
-Поддержка по сервису [https://rulink.io/support/cadastral](https://rulink.io/support/cadastral)  
+Описание сервиса: [https://promo.rulink.io/cadastral](https://promo.rulink.io/cadastral)  
+Поддержка по сервису: [https://rulink.io/support/cadastral](https://rulink.io/support/cadastral)  
 API: [https://cadastral.rulink.io/api/v1/swagger](https://cadastral.rulink.io/api/v1/swagger)  
