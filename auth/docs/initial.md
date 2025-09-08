@@ -104,13 +104,7 @@ sudo /opt/services/updates/identity-initializer/XIdentityDbInitializer %first_us
 Вы должны увидеть что-то подобное:
 ``` bash
 ...
-info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-      Executed DbCommand (4ms) [Parameters=[@p0='?', @p1='?' (DbType = Boolean), @p2='?'], CommandType='Text', CommandTimeout='30']
-      INSERT INTO "IdentityRelationUserGroups" ("GroupId", "IsDefault", "UserId")
-      VALUES (@p0, @p1, @p2)
-      RETURNING "Id";
 Пользователю 'first@user.me' добавлена роль 'admin'
-root@dev-01:/opt/services/updates# mc
 ```
 
 Выполните обновление и перезапуск сервиса:
