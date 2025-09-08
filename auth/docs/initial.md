@@ -89,7 +89,7 @@ total 16
 ```
  
 ### Настройка базы данных
-Убедитесь, что выполнен шаг [Файл конфигурации appsettings.json](initial/#appsettingsjson). 
+Убедитесь, что выполнен шаг [Файл конфигурации appsettings.json](#appsettingsjson). 
 
 Данные для подключения к базе данных будут взяты из `appsettings.json` из папки `/opt/services/updates/static/identity/`.
 
