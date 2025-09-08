@@ -35,7 +35,7 @@ identityservice    latest    f3521e93ccbe   now            211MB
     }
   },
   "ConnectionStrings": {
-    "PostgresServerConnection": "Host=your_db_host;Port=5432;Database=your_db_name;Username=your_db_user;Password=your_db_password;"
+    "PostgresServerConnection": "Host=your_db_host:5432;Database=your_db_name;Username=your_db_user;Password=your_db_password;"
   },
   "Auth": {
    "Url": "%https://your-domain-name%",
@@ -96,7 +96,9 @@ total 16
 ```bash
 sudo /opt/services/updates/identity-initializer/XIdentityDbInitializer %first_user_email% %first_user_password% /opt/services/updates/static/identity/appsettings.json
 ```
+
 - %first_user_email% - email пользователя, который будет создан с правами администратора
+
 - %first_user_password% - пароль пользователя, который будет создан с правами администратора. Не менее 7 символов.
 
 Вы должны увидеть что-то подобное:
@@ -113,6 +115,6 @@ root@dev-01:/opt/services/updates# mc
 
 Выполните обновление и перезапуск сервиса:
 ```bash
-/opt/services/updates/update.identityservice.sh
+sudo bash /opt/services/updates/update.identityservice.sh
 ```
 После выполнения команды, сервис аутентификации будет запущен и готов к использованию.
