@@ -57,6 +57,7 @@ identityservice    latest    f3521e93ccbe   now            211MB
 }
 ```
 Замените следующие параметры:
+
 - `your_db_host` - адрес вашего PostgreSQL сервера
 - `your_db_name` - имя базы данных
 - `your_db_user` - имя пользователя базы данных
@@ -99,7 +100,6 @@ sudo /opt/services/updates/identity-initializer/XIdentityDbInitializer %first_us
 ```
 
 - %first_user_email% - email пользователя, который будет создан с правами администратора
-
 - %first_user_password% - пароль пользователя, который будет создан с правами администратора. Не менее 7 символов.
 
 Вы должны увидеть что-то подобное:
