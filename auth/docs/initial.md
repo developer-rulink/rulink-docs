@@ -36,7 +36,7 @@ identityservice    latest    f3521e93ccbe   now            211MB
     }
   },
   "ConnectionStrings": {
-    "PostgresServerConnection": "Host=your_db_host:5432;Database=your_db_name;Username=your_db_user;Password=your_db_password;"
+    "PostgresServerConnection": "Host=%your_db_host%:5432;Database=%your_db_name%;Username=%your_db_user%;Password=%your_db_password%;"
   },
   "Auth": {
    "Url": "%https://your-domain-name%",
@@ -58,10 +58,10 @@ identityservice    latest    f3521e93ccbe   now            211MB
 ```
 Замените следующие параметры:
 
-- `your_db_host` - адрес вашего PostgreSQL сервера
-- `your_db_name` - имя базы данных
-- `your_db_user` - имя пользователя базы данных
-- `your_db_password` - пароль пользователя базы данных
+- `%your_db_host%` - адрес вашего PostgreSQL сервера и порт
+- `%your_db_name%` - имя базы данных
+- `%your_db_user%` - имя пользователя базы данных
+- `%your_db_password%` - пароль пользователя базы данных
 - `%https://your-domain-name%` - URL, по которому будет доступен сервис аутентификации
 - `%YourOrganizationName%` - название вашей организации, которое будет использоваться в качестве аудитории JWT токенов
 
@@ -72,8 +72,6 @@ identityservice    latest    f3521e93ccbe   now            211MB
 ```bash
 sudo apt-get install openssl
 ```
-
-
 Для генерации пары ключей (приватного и публичного) запустите скрипт 
 ```bash
 sudo bash /opt/services/updates/identity-generate-jwt-keys.sh
@@ -91,7 +89,8 @@ total 16
 ```
  
 ### Настройка базы данных
-Убедитесь, что выполнен шаг `Файл конфигурации appsettings.json`. 
+Убедитесь, что выполнен шаг [Файл конфигурации appsettings.json](initial/#appsettingsjson). 
+
 Данные для подключения к базе данных будут взяты из `appsettings.json` из папки `/opt/services/updates/static/identity/`.
 
 Выполните команду в терминале:
