@@ -122,7 +122,7 @@ total 16
 ```
  
 ### Запустите сервис аутентификации
-Запустите скрипт для обновления и запуска сервиса аутентификации:
+Запустите скрипт для настройки и запуска сервиса аутентификации:
 ```bash
 sudo bash /opt/services/updates/update-identity.sh
 ```
@@ -134,10 +134,28 @@ sudo bash /opt/services/updates/update-identity.sh
     3. Настраивается автоматический запуск сервиса при загрузке системы  
     4. Запускается сервис аутентификации
 
+### Проверить работоспособность сервиса
+После запуска сервиса, проверьте его статус:
+```bash
+sudo systemctl status identityservice
+```
+Вы должны увидеть что-то подобное:
+``` bash
+● identityservice.service - IdentityService
+     Loaded: loaded (/etc/systemd/system/identityservice.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2023-09-11 012:34:56 UTC; 1min 30s ago
+     Main PID: 12345 (dotnet)
+     Tasks: 10 (limit: 4915)
+     Memory: 50.0M
+``` 
 
+Проверьте доступность API сервиса:
+```bash
+curl -k https://your_auth_url/api/auth/v1/heartbeat
+"Server Ok\nVersion:0.1.1"
+```
 
-
-
+Откройте страницу `https://your_auth_url/heartbeat` в браузере.
 
 
 
