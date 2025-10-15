@@ -16,7 +16,7 @@ telegram: [@rulinkio](https://t.me/rulinkio)
 
 ### Настройте сервер баз данных PostgreSQL
 Сервис аутентификации использует PostgreSQL в качестве базы данных.  
-[x] Убедитесь, что у вас есть доступ к серверу PostgreSQL.  
+- [x] Убедитесь, что у вас есть доступ к серверу PostgreSQL.  
 
 Создайте пользователя и базу данных для сервиса аутентификации. Запишите следующие данные:
 
@@ -95,14 +95,14 @@ total 16
     }
   },
   "ConnectionStrings": {
-    **"PostgresServerConnection": "Host=your_server:your_port;Database=your_db;Username=your_user;Password=your_password"**
+    "PostgresServerConnection": "Host=your_server:your_port;Database=your_db;Username=your_user;Password=your_password"
   },
   "Auth": {
-    **"Url": "your_auth_url",**
+    "Url": "your_auth_url",
     "Jwt": {
       "PrivateKeyPath": "/opt/resources/jwt_private.key",
       "PublicKeyPath": "/opt/resources/jwt_public.key",
-      **"Audience": "your_company_name"**
+      "Audience": "your_company_name"
     },
     "DataProtectionPersistentKey": "/opt/resources/keys"
   },
@@ -120,6 +120,20 @@ total 16
 }
 
 ```
+ 
+### Запустите сервис аутентификации
+Запустите скрипт для обновления и запуска сервиса аутентификации:
+```bash
+sudo bash /opt/services/updates/update-identity.sh
+```
+После выполнения команды, сервис аутентификации будет запущен и готов к использованию.
+
+??? question "Что происходит при запуске скрипта"
+    1. Создаются папки для работы сервиса + устанавливаются права доступа  
+    2. Копируются файлы конфигурации и ключи в папку сервиса  
+    3. Настраивается автоматический запуск сервиса при загрузке системы  
+    4. Запускается сервис аутентификации
+
 
 
 
