@@ -1,6 +1,8 @@
 # Примеры разметки 
 
-Полное описание синтаксиса разметки можно найти в [https://www.mkdocs.org/user-guide/](https://www.mkdocs.org/user-guide/).
+Полное описание генератора [https://www.mkdocs.org/user-guide/](https://www.mkdocs.org/user-guide/).
+
+Полное описание правила разметки [https://squidfunk.github.io/mkdocs-material/reference/lists/](https://squidfunk.github.io/mkdocs-material/reference/lists/)
 
 ## Заголовки
 # Заголовок1
