@@ -39,7 +39,7 @@
 ### Внешние ссылки
 [Текст ссылки](https://example.com)
 ### Внутренние ссылки
-[Текст ссылки](docs/index.md)
+[Текст ссылки](index.md)
 ### Ссылки на email
 [email](mailto:test@rulink.io)
 
