@@ -64,6 +64,7 @@ sudo apt-get install openssl
 ```bash
 sudo bash /opt/services/updates/identity-generate-jwt-keys.sh
 ```
+
 Вы должны увидеть что-то подобное:
 ``` bash
 .......... ...
