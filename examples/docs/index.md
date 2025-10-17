@@ -101,3 +101,9 @@ sequenceDiagram
 
 !!! success "Заголовок примечания"
     Текст примечания.
+
+## Изображения
+<figure markdown="span">
+  ![Поиск кадастровой информации](https://rulink.io/images/image-012.png){ width="500" }
+  <figcaption>Поиск и результат</figcaption>
+</figure>
