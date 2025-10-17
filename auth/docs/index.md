@@ -28,7 +28,7 @@ sequenceDiagram
     alt Учетные данные валидны
         Auth-->>User: Cookie с JWT
         User->>Service: Открывает страницу сервиса  
-        Service->>Service: Проверка JWT из Cookie
+        Service->>Service: Валидация JWT
         Service->>Auth: Запрос данных пользователя
         Auth-->>Service: Данные пользователя
         Service-->>User: Доступ к приложению (сеанс установлен)
