@@ -27,7 +27,7 @@ sequenceDiagram
 
     User->>Service: Проверяет документ с ЭП
     Service->>PKI: Проверка статуса сертификата<br/>[serialNumber, crlpoint]
-    PKI->>CA: Запрос списка отозванных сертификатов (CRL)
+    PKI->>CA: Запрос списка отозванных<br/>сертификатов (CRL)
     CA-->>PKI: CRL
     PKI->>PKI: Проверка статуса сертификата
     PKI-->>Service: Статус сертификата
@@ -38,7 +38,7 @@ sequenceDiagram
     PKI->>PKI: Проверка статуса УЦ
     PKI-->>Service: Статус УЦ
     
-    Service-->>Service: Формирование отчета проверки ЭП
+    Service->>Service: Формирование отчета проверки ЭП
     Service-->>User: Отчет проверки ЭП
 ```
 
