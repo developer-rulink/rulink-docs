@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://rulink.io/support/cadastral/sitemap.xml

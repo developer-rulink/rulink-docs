@@ -1,0 +1,58 @@
+site_name: Правовой центр
+site_url: https://rulink.io/legal
+copyright: 2025 &copy; ООО Облакотех
+theme:
+  logo: assets/favicon.svg
+  favicon: assets/favicon.svg
+  name: material
+  language: ru
+  custom_dir: overrides
+nav:
+  - index.md
+  - НА ГЛАВНУЮ: 'https://rulink.io'
+extra:
+    homepage: https://rulink.io
+    social:
+    - icon: fontawesome/brands/telegram 
+      link: https://t.me/rulinkio
+      name: Наш Telegram
+    - icon: fontawesome/solid/at 
+      link: mailto:hello@rulink.io
+      name: Наша электронная почта
+markdown_extensions:
+  - toc:
+      toc_depth: 0
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
+  - attr_list
+  - pymdownx.blocks.caption
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+plugins:
+  - i18n:
+      default_language: ru
+      languages:
+        ru:
+          name: Russian
+          build: true
+          site_name: "Правовые документы"
