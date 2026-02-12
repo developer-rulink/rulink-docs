@@ -9,7 +9,10 @@
 
 ## Что необходимо для начала работы
 
-1. Доменное имя для сервиса Identity (если сервиса еще нет)  
+!!! info  
+    Сервис Identity и сервис Crypto должны быть в одном домене, это важно для работы механизма cookies
+
+1. Доменное имя для сервиса Identity (если у вас уже есть Identity сервис от других продуктов Облакотех - можно использовать его)  
 2. Доменное имя для сервиса работы с электронной подписью
 3. Доступный сервис **PostgreSQL 17+**  
     3.1. Созданная база данных  
@@ -27,6 +30,86 @@
     Инстанс PostgreSQL может быть создан в Яндекс Облаке. Инструкция тут: [xxx](xxx)  
     Инстанс S3 может быть создан в Яндекс Облаке. Инструкция тут: [xxx](xxx)
 
+## Установка и настройка
+
+### Шаг 1. Запустите сервис из маркетплейса Яндекс Облака
+
+### Шаг 2. Настройка сервиса Identity
+
+Если у вас нет настроенного сервиса Identity выполните этот шаг.  
+Если у вас есть настроенный сервис Identity используйте настройки подключения, существующего сервиса (см. раздел `Интеграция с сервисом Identity`).  
+
+#### Интеграция с сервисом Identity
+
+Описание интеграции с сервисом Identity представлено тут: [xxx](xxx)
+
+### Шаг3. Настройка сервиса CryptoService
+
+Все пользовательские параметры запуска сервиса хранятся в compose.yaml файле.  
+Путь к файлу `/opt/services/z-config/rulink-compose/.env`
+
+#### 3.1. Интеграция с Identity
+
+Скопируйте файл публичного ключа подписи для JWT.  
+Получите файл `jwt_public.key` и сохраните его в директорию  
+`/opt/services/z-config/cryptoservice/resources/.rulink/`
+
+ПРИМЕР содержимого файла
+
+``` bash
+-----BEGIN PUBLIC KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+XXXXXXXXXXXXXXXXDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+QQQQQQQWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+SSSSSSXCDF
+-----END PUBLIC KEY-----
+```
+
+Укажите параметры работы Identity сервиса. Для этого заполните параметры запуска в compose.yaml файле.  
+Путь к файлу `/opt/services/z-config/rulink-compose/.env`
+
+Укажите переменные:
+
+``` yaml
+# Identity service configuration
+IDENTITY_SERVICEURL=_URL_ВАШЕГО_IDENTITY_СЕРВИСА       #Например: https://identity-demo.oblakotech.ru
+IDENTITY_DOMAIN=_ДОМЕН_В_КОТОРОМ_РАБОТАЮТ_ВАШ_СЕРВИС_  #Например: oblakotech.ru
+IDENTITY_AUDIENCE=_НАЗВАНИЕ_КОМПАНИИ                   #Например: oblakotech Рекомендуется как домен
+IDENTITY_SKIP_FINGERPRINT=true                         #Например: идентификация с дополнительным фактором защиты. Должно быть как у сервиса Identity
+```
+
+!!! info  
+    Переменные интеграции с сервисов Identity должны быть такие же, как у сервиса Identity.  
+    Если оба сервиса работают в одном docker compose этот блок переменных будет общий для обоих сервисов.  
+    По умолчанию, оба сервиса работают в одном docker compose. Если у вас другая конфигурация и вам требуется помощь - обратитесь в нашу поддержку [support@rulink.io](mailto:support@rulink.io).
+
+#### 3.2. Настройка сервиса Crypto
+
+Для работы сервис использует:
+
+- Базу данных
+- Объектное хранилище
+
+Переменные для подключения базы данных к сервису
+
+``` yaml
+CS_DB_HOST=_DB_SERVERNAME_
+CS_DB_PORT=_DB_SERVICEPORT_
+CS_DB_NAME=_DB_NAME_
+CS_DB_USER=_DB_USER_
+CS_DB_PASSWORD=_DB_USERPASSWORD_
+```
+
+База данных должна быть создана.  
+Пользователь DB_USER должен иметь права:
+
+- LOGIN
+- CONNECT ON DATABASE
+- USAGE, CREATE ON SCHEMA
+
+!!! warning  
+    Рекомендуется назначать пользователю минимальные права (избегайте ролей SUPERUSER, CREATEDB, CREATEROLE, избегайте прав pg_read_all_data / pg_write_all_data)
+
 ## Компоненты сервиса
 
 1. ubuntu 24.04+ LTS  
@@ -35,4 +118,3 @@
 4. identity service oblakotech
 5. crypto service oblakotech
 
-## 
