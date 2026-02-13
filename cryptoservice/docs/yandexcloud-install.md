@@ -147,8 +147,20 @@ AWS_SECRET_ACCESS_KEY=_YOUR_SECRET_KEY_
 
 Если вы используете сервис Identity из другой поставки - отключите этот сервис в текущей поставке (см. Настройка Identity).
 
-Выполните скрипт обновления для всех настроенных сервисов. `update-crypto.sh`
-Выполните скрипт `update-compose.sh`
+Выполните скрипты обновления всех настроенных сервисов:
+
+- `update-identity.sh` для обновления конфигурации сервиса `Identity` (если используете сервис из этой поставки)  
+- `update-crypto.sh` для обновления конфигурации сервиса `CryptoService`
+
+``` bash
+sudo bash -c /opt/services/z-config/update-identity.sh
+```
+
+``` bash
+sudo bash -c /opt/services/z-config/update-crypto.sh
+```
+
+Выполните скрипт `update-compose.sh` для перезапуска всех сервисов.
 
 ``` bash
 sudo bash -c /opt/services/z-config/update-compose.sh
@@ -156,8 +168,45 @@ sudo bash -c /opt/services/z-config/update-compose.sh
 
 Если все сконфигурированно правильно, то вывод будет примерно такой
 ``` bash
-
+...
+Docker compose logs:
+cryptoservice-1  | 14:50:35.0816 INFO  [] Microsoft.Hosting.Lifetime Now listening on: http://[::]:8080
+cryptoservice-1  | 14:50:35.0839 DEBUG [] Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly WebApplication
+cryptoservice-1  | 14:50:35.0855 INFO  [] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+cryptoservice-1  | 14:50:35.0860 INFO  [] Microsoft.Hosting.Lifetime Hosting environment: Production
+cryptoservice-1  | 14:50:35.0860 INFO  [] Microsoft.Hosting.Lifetime Content root path: /app
+cryptoservice-1  | 14:50:35.0860 DEBUG [] Microsoft.Extensions.Hosting.Internal.Host Hosting started
+...
+identity-1       | 14:50:35.2779 WARN  [] WebApplication.LogHolder ------ First launch initialization completed ------
+identity-1       | 14:50:35.4732 INFO  [] Microsoft.Hosting.Lifetime Now listening on: http://[::]:8080
+identity-1       | 14:50:35.4777 INFO  [] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+identity-1       | 14:50:35.4780 INFO  [] Microsoft.Hosting.Lifetime Hosting environment: Production
+identity-1       | 14:50:35.4780 INFO  [] Microsoft.Hosting.Lifetime Content root path: /app
+-------------------------------
+Script completed
+-------------------------------
 ```
+
+### Шаг 7. Проверка работы сервисов
+
+Используйте браузер для доступа к сервисам.  
+Перейдите по доменному имени сервиса **Identity** в браузере. Сервис должен автоматически переключиться на протокол `https`.  
+Будет открыта страница `/auth/login` с формой ввода логина и пароля. Введите логин и пароль - после успешной авторизации будет выполнен автоматический переход на страницу `/auth/account` c данными профиля пользователя.  
+
+Перейдите по доменному имени сервиса **CryptoService** в браузере. Сервис должен автоматически переключиться на протокол `https`.  
+Будет открыта страница `/` с кратким описанием разделов сервиса.  
+Перейдите в раздел **Проверка подписи** - этот раздел доступен без авторизации, если он открывается значит сервис работает. Этот раздел доступен без авторизации, доступа к базе данных и объектному хранилищу.  
+Перейдите в раздел **Подписание** - этот раздел доступен только для авторизованных пользователей, если он открывается значит сервис  **CryptoService** успешно интегрирован с сервисом **Identity**.  
+На странице **Подписание** нажмите кнопку **Новый** создайте новый пакет документов. Заполните **Описание** и нажмите кнопку **Сохранить**. Добавьте один или несколько файлов в пакет документов. Добавленные файлы дожлны появиться в пакете. Обновите страницу с пакетом - данные пакета будут отображены.
+
+Ура, сервисы настроены!
+
+### Шаг 8. В случае ошибки
+
+Проверить работу сервисов можно в лог файлах.  
+Лог файлы хранятся в каталоге сервиса `/opt/services/{SERVICENAME}/logs`. Каждый файл хранил логи работы сервиса за полные сутки.  
+
+Если у вас не получилось настроить сервис самостоятельно - обратитесь в нашу службу поддержки [support@rulink.io](mailto:support@rulink.io)
 
 ## Компоненты сервиса
 
