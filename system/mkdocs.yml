@@ -9,7 +9,9 @@ theme:
   custom_dir: overrides
 nav:
   - index.md
-  - НА ГЛАВНУЮ: 'https://rulink.io'
+  - ssl.md
+  - nginx.md
+  - НА ГЛАВНУЮ: 'https://rulink.io/support'
 extra:
     homepage: https://rulink.io
     social:
