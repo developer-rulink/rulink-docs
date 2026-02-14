@@ -21,7 +21,11 @@
 sudo bash -c /opt/services/z-config/generate-selfsigned-ssl.sh _ДОМЕННОЕ_ИМЯ_
 ```
 
-Например: `sudo bash -c /opt/services/z-config/generate-selfsigned-ssl.sh crypto.oblakotech.ru`
+Например:
+
+``` bash
+sudo bash -c /opt/services/z-config/generate-selfsigned-ssl.sh crypto.oblakotech.ru
+```
 
 ??? "Что делает скрипт"
     1. Генерирует открытый и закрытый ключ  
