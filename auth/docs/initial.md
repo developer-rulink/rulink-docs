@@ -169,7 +169,7 @@ sudo bash -c /opt/services/z-config/update-compose.sh
 
 ``` yaml
 IDENTITY_ALLOW_LOCAL_USERS=false         # false - для запрета на вход пользователем admin@local
-IDENTITY_LOCALADMIN_PWD=_YOUR_PASSWORD_  # <--- ЗАПОМНИТЕ И УДАЛИТЕ ЭТУ ПЕРЕМЕННУЮ
+IDENTITY_LOCALADMIN_PWD=_YOUR_PASSWORD_  # <--- ЗАПОМНИТЕ ПАРОЛЬ И УДАЛИТЕ ЭТУ СТРОКУ !
 ```
 
 Выполните скрипт для запуска `docker compose` с новыми переменными:
