@@ -23,13 +23,13 @@ sudo bash -c /opt/services/z-config/generate-selfsigned-ssl.sh _ДОМЕННОЕ
 
 Например: `sudo bash -c /opt/services/z-config/generate-selfsigned-ssl.sh crypto.oblakotech.ru`
 
-??? Что делает скрипт
+??? "Что делает скрипт"
     1. Генерирует открытый и закрытый ключ  
     Файлы сертификата будут сохранены в директории `/opt/ssl/`:  
-    - `/opt/ssl/{your_domain_name}.crt` - открытый ключ
-    - `/opt/ssl/{your_domain_name}.key` - закрытый ключ  
+        - `/opt/ssl/{your_domain_name}.crt` - открытый ключ
+        - `/opt/ssl/{your_domain_name}.key` - закрытый ключ  
     2. Добавляет ссылку на ключи в конфигурацию **nginx**  
-    `/etc/nginx/snippets/ssl-{your_domain_name}.conf`  
+        `/etc/nginx/snippets/ssl-{your_domain_name}.conf`  
     3. Устанавливает разрешения на файлы и папку `/opt/ssl/`
 
 ### Поведение браузера при работе с самоподписанными сертификатами
