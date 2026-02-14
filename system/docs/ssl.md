@@ -71,27 +71,37 @@ sudo bash -c /opt/services/z-config/generate-selfsigned-ssl.sh crypto.oblakotech
 
 ## Настройка публикации сервиса
 
-<claude>заполни тут как публикуются сервисы в nginx</claude>
+Каждый сервис публикуется через отдельный конфигурационный файл **nginx**
 
-В строке где задается конфигурация SSL-сертификатов укажите имя вашего конфигурационного файла:
+Для всех публикуемых сервисов, выполните следующее:
 
-- Для wildcard сертификатов авторизованного ценра: Настройки, Шаг 2.
-- Для самоподписанных сертификатов: "Что делает скрипт", Пункт 2.
+1. Отредактируйте файл `/opt/services/z-config/nginx_sites/{service}`
+2. Укажите корректное доменное имя для публикации сервиса (в двух местах)
+3. Укажите корректный файл конфигурации ssl для сервиса
+    - Для wildcard сертификатов авторизованного ценра: см. Настройки, Шаг 2.
+    - Для самоподписанных сертификатов: см. "Что делает скрипт", Пункт 2.
 
-Пример конфигурации
+пример файла:
 
 ``` yaml
 server {
         listen 443 ssl;
-        server_name example.oblakotech.com;     # <--- ТУТ ВАШЕ ДОМЕННОЕ ИМЯ
-        include snippets/ssl-id-ins1.oblakotech.ru.conf;  # <--- ТУТ КОНФИГУРАЦИЯ SSL-СЕРТИФИКАТОВ.  
+        server_name light-edo.pbank.ru;          # <--- АКТУАЛЬНОЕ ДОМЕННОЕ ИМЯ
+        include snippets/wildcard-pbank.ru.conf; # <--- ФАЙЛ КОНФИГУРАЦИИ SSL
+        ...
+}
 
-        root /opt/services/identity/;
-        include snippets/https.common.conf;
-        include /etc/nginx/mime.types;
-     
-        location / {
-                root /opt/services/identity/;
-        }
+server {
+        listen 80;
+        server_name light-edo.pbank.ru;          # <--- АКТУАЛЬНОЕ ДОМЕННОЕ ИМЯ
+        return 301 https://$server_name$request_uri;
 }
 ```
+
+После того, как все файлы в `nginx_sites` будут актуализированы, выполните скрипт:
+
+``` bash
+sudo bash -c /opt/services/z-config/update-nginx.sh
+```
+
+Проверьте доступность сервиса в браузере.
