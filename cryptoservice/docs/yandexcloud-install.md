@@ -26,7 +26,7 @@
     5.3. Инструкция по настройке TLS-сертификатов приведена ниже
 
 !!! info
-    Инстанс PostgreSQL может быть создан в Яндекс Облаке. Инструкция: [https://yandex.cloud/ru/docs/managed-postgresql/](https://yandex.cloud/ru/docs/managed-postgresql/)
+    Инстанс PostgreSQL может быть создан в Яндекс Облаке. Инструкция: [https://yandex.cloud/ru/docs/managed-postgresql/](https://yandex.cloud/ru/docs/managed-postgresql/)  
     Инстанс S3 может быть создан в Яндекс Облаке. Инструкция: [https://yandex.cloud/ru/docs/storage](https://yandex.cloud/ru/docs/storage/)
 
 ## Установка и настройка
