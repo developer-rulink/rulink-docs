@@ -8,6 +8,7 @@ theme:
   language: ru
   custom_dir: overrides
 nav:
+    - yandexcloud-install.md
     - НА ГЛАВНУЮ: 'https://rulink.io/support/pdf'
 extra:
     homepage: https://rulink.io/support
