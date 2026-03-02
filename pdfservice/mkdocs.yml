@@ -11,7 +11,7 @@ nav:
     - yandexcloud-install.md
     - НА ГЛАВНУЮ: 'https://rulink.io/support/pdfservice'
 extra:
-    homepage: 'https://rulink.io/support/'
+    homepage: 'https://rulink.io/support'
     social:
     - icon: fontawesome/brands/telegram 
       link: https://t.me/rulinkio
