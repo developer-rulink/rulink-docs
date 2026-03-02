@@ -1,7 +1,7 @@
 # Запуск сервиса из Marketplace Yandex Cloud
 
 Вы можете запустить собственную инсталляцию сервиса из Маркетплейса Яндекс Облака.
-Страница сервиса на маркетплейсе: [xxx](xxx)
+Страница сервиса на маркетплейсе: [https://yandex.cloud/ru/marketplace/products/oblakoteh/signservice](https://yandex.cloud/ru/marketplace/products/oblakoteh/signservice)
 
 !!! tip "Время на установку"
     Время получения и настройки сервиса из Маркетплейса займёт около 13 минут.
