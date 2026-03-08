@@ -42,7 +42,7 @@
 
 ### Шаг 2. Настройка сервиса Identity
 
-Если у вас еще нет настроенного сервиса Identity — настройте сервис **Identity**. Подробнее о настройке сервиса: [https://rulink.io/support/auth/initial/](https://rulink.io/support/auth/initial/)
+Если у вас еще нет настроенного сервиса Identity — настройте сервис **Identity**. Подробнее о настройке сервиса: [https://rulink.io/support/auth/initial/](https://rulink.io/support/auth/initial/?utm_source=support&utm_medium=crypto&utm_campaign=yc-install)
 
 Если у вас есть настроенный сервис Identity — перейдите к разделу Шаг 3
 
@@ -61,9 +61,8 @@
 
 ``` text
 -----BEGIN PUBLIC KEY-----
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-XXXXXXXXXXXXXXXXDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
-QQQQQQQWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+AAAA...
+...
 SSSSSSXCDF
 -----END PUBLIC KEY-----
 ```
@@ -127,8 +126,12 @@ AWS_SECRET_ACCESS_KEY=_YOUR_SECRET_KEY_
 !!! note
     Для лучшего пользовательского опыта рекомендуется использовать сертификаты от авторизованных центров сертификации.
 
-Подробная инструкция по настройке wildcard-сертификатов: [Настройка SSL-сертификатов](https://rulink.io/support/system/ssl/)
-Подробная инструкция по созданию самоподписанных сертификатов: [Настройка SSL-сертификатов](https://rulink.io/support/system/ssl/)
+Подробная инструкция по настройке wildcard-сертификатов: [Настройка TLS-сертификатов](https://rulink.io/support/system/tls/?utm_source=support&utm_medium=crypto)
+Подробная инструкция по созданию самоподписанных сертификатов: [Настройка TLS-сертификатов](https://rulink.io/support/system/tls/?utm_source=support&utm_medium=crypto)
+
+#### Шаг 4.1. Публикация сервиса
+
+Подробная инструкция по публикации сервисов: [Публикация сервисов в nginx](https://rulink.io/support/system/nginx/?utm_source=support&utm_medium=crypto)
 
 ### Шаг 5. Запуск сервисов
 

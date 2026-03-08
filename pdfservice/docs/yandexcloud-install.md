@@ -32,12 +32,12 @@
 !!! note
     Для лучшего пользовательского опыта рекомендуется использовать сертификаты от авторизованных центров сертификации.
 
-Подробная инструкция по настройке сертификатов: [Настройка TLS-сертификатов](https://rulink.io/support/system/tls/)
+Подробная инструкция по настройке сертификатов: [Настройка TLS-сертификатов](https://rulink.io/support/system/tls/?utm_source=support&utm_medium=pdfservice&utm_campaign=yc-install)
 
 ### Шаг 3. Настройка публикации сервиса
 
 Укажите доменное имя сервиса в файле конфигурации nginx.  
-Полная инструкция по настройке nginx: [Настройка nginx](https://rulink.io/support/system/nginx/)  
+Полная инструкция по настройке nginx: [Настройка nginx](https://rulink.io/support/system/nginx/?utm_source=support&utm_medium=pdfservice&utm_campaign=yc-install)  
 
 ### Шаг 4. Запуск сервисов
 

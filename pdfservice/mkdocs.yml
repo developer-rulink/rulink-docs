@@ -1,5 +1,5 @@
 site_name: Сервис работы с PDF
-site_url: https://rulink.io/support/pdf
+site_url: https://rulink.io/support/pdfservice
 copyright: 2026 &copy; ООО Облакотех
 theme:
   logo: assets/favicon.svg
@@ -11,7 +11,7 @@ nav:
     - yandexcloud-install.md
     - НА ГЛАВНУЮ: 'https://rulink.io/support/pdfservice'
 extra:
-    homepage: 'https://rulink.io/support'
+    homepage: 'https://rulink.io/support/pdfservice'
     social:
     - icon: fontawesome/brands/telegram 
       link: https://t.me/rulinkio
