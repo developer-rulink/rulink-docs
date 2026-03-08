@@ -9,9 +9,9 @@ theme:
   custom_dir: overrides
 nav:
     - yandexcloud-install.md
-    - НА ГЛАВНУЮ: 'https://rulink.io/support/pdfservice'
+    - НА ГЛАВНУЮ: 'https://promo.rulink.io/support'
 extra:
-    homepage: 'https://rulink.io/support/pdfservice'
+    homepage: 'https://promo.rulink.io/support'
     social:
     - icon: fontawesome/brands/telegram 
       link: https://t.me/rulinkio

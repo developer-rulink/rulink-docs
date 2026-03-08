@@ -26,13 +26,13 @@ __Релиз: 2026022801__
 
 ## Интеграция по API
 
-Все наши сервисы разработаны с подходом API-First и доступны для интеграции.
-Описание API: [https://crypto-demo.rulink.io/api/v1/swagger](https://crypto-demo.rulink.io/api/v1/swagger?utm_source=support&utm_medium=crypto)
+Все наши сервисы разработаны с подходом API-First и доступны для интеграции.  
+Описание API: [https://crypto-demo.rulink.io/api/v1/swagger](https://crypto-demo.rulink.io/api/v1/swagger?utm_source=support&utm_medium=crypto)  
 Запросить API-ключ можно по адресу [hello@rulink.io](mailto:hello@rulink.io)
 
 ## Ссылки
 
-Сервис: [https://crypto-demo.rulink.io](https://crypto-demo.rulink.io?utm_source=support&utm_medium=crypto)
-Описание сервиса: [https://promo.rulink.io/crypto](https://promo.rulink.io/crypto?utm_source=support&utm_medium=crypto)
-Поддержка по сервису: [https://rulink.io/support/crypto](https://rulink.io/support/crypto?utm_source=support&utm_medium=crypto)
+Сервис: [https://crypto-demo.rulink.io](https://crypto-demo.rulink.io?utm_source=support&utm_medium=crypto)  
+Описание сервиса: [https://promo.rulink.io/crypto](https://promo.rulink.io/crypto?utm_source=support&utm_medium=crypto)  
+Поддержка по сервису: [https://rulink.io/support/crypto](https://rulink.io/support/crypto?utm_source=support&utm_medium=crypto)  
 API: [https://crypto-demo.rulink.io/api/v1/swagger](https://crypto-demo.rulink.io/api/v1/swagger?utm_source=support&utm_medium=crypto)
