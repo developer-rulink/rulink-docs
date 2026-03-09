@@ -15,4 +15,4 @@
 
 ## Ссылки
 
-Демо сервиса: [https://pdf.rulink.io](https://pdf.rulink.io?utm_source=support&utm_medium=pdfservice)  
+Демо сервиса: [https://pdf.rulink.io/ru/](https://pdf.rulink.io/ru/?utm_source=support&utm_medium=pdfservice)  
