@@ -35,13 +35,13 @@
 
 ## Интеграция по API
 
-Все наши сервисы разработаны с подходом API-First и доступны для интеграции.
-Описание API: [https://cadastral.rulink.io/api/v1/swagger](https://cadastral.rulink.io/api/v1/swagger?utm_source=support&utm_medium=cadastral)
-Запросить API-ключ можно по адресу [hello@rulink.io](mailto:hello@rulink.io)
+Все наши сервисы разработаны с подходом API-First и доступны для интеграции.  
+Описание API: [https://cadastral.rulink.io/api/v1/swagger](https://cadastral.rulink.io/api/v1/swagger?utm_source=support&utm_medium=cadastral)  
+Запросить API-ключ можно по адресу [hello@rulink.io](mailto:hello@rulink.io)  
 
 ## Ссылки
 
-Сервис: [https://cadastral.rulink.io](https://cadastral.rulink.io?utm_source=support&utm_medium=cadastral)
-Описание сервиса: [https://promo.rulink.io/cadastral](https://promo.rulink.io/cadastral?utm_source=support&utm_medium=cadastral)
-Поддержка по сервису: [https://rulink.io/support/cadastral](https://rulink.io/support/cadastral?utm_source=support&utm_medium=cadastral)
-API: [https://cadastral.rulink.io/api/v1/swagger](https://cadastral.rulink.io/api/v1/swagger?utm_source=support&utm_medium=cadastral)
+Сервис: [https://cadastral.rulink.io](https://cadastral.rulink.io?utm_source=support&utm_medium=cadastral)  
+Описание сервиса: [https://promo.rulink.io/cadastral](https://promo.rulink.io/cadastral?utm_source=support&utm_medium=cadastral)  
+Поддержка по сервису: [https://rulink.io/support/cadastral](https://rulink.io/support/cadastral?utm_source=support&utm_medium=cadastral)  
+API: [https://cadastral.rulink.io/api/v1/swagger](https://cadastral.rulink.io/api/v1/swagger?utm_source=support&utm_medium=cadastral)  
