@@ -15,14 +15,14 @@
 ``` yaml
 server {
         listen 443 ssl;
-        server_name mysite.pbank.ru;          # <--- АКТУАЛЬНОЕ ДОМЕННОЕ ИМЯ
-        include snippets/wildcard-pbank.ru.conf; # <--- ФАЙЛ КОНФИГУРАЦИИ SSL
+        server_name mysite.ru;             # <--- АКТУАЛЬНОЕ ДОМЕННОЕ ИМЯ
+        include snippets/mysite.ru.conf;   # <--- ФАЙЛ КОНФИГУРАЦИИ SSL
         ...
 }
 
 server {
         listen 80;
-        server_name mysite.pbank.ru;          # <--- АКТУАЛЬНОЕ ДОМЕННОЕ ИМЯ
+        server_name mysite.ru;             # <--- АКТУАЛЬНОЕ ДОМЕННОЕ ИМЯ
         ...
 }
 ```
