@@ -42,9 +42,9 @@
 
 ### Шаг 2. Настройка сервиса Identity
 
-Если у вас еще нет настроенного сервиса Identity — настройте сервис **Identity**. Подробнее о настройке сервиса: [https://rulink.io/support/auth/initial/](https://rulink.io/support/auth/initial/?utm_source=support&utm_medium=crypto&utm_campaign=yc-install)
+Если у вас ещё нет настроенного сервиса Identity — настройте сервис **Identity**. Подробнее о настройке сервиса: [https://rulink.io/support/auth/initial/](https://rulink.io/support/auth/initial/?utm_source=support&utm_medium=crypto&utm_campaign=yc-install)
 
-Если у вас есть настроенный сервис Identity — перейдите к разделу Шаг 3
+Если у вас есть настроенный сервис Identity — перейдите к разделу Шаг 3.
 
 ### Шаг 3. Настройка сервиса CryptoService
 

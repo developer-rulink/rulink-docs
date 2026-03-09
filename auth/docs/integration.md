@@ -11,7 +11,7 @@
 
 ## Шаг 1. Получить параметры сервиса Identity
 
-Найдите параметры запуска сервиса Identity (в файле `/opt/services/z-config/rulink-compose/.env`) и скопируйте параметры
+Найдите параметры запуска сервиса Identity (в файле `/opt/services/z-config/rulink-compose/.env`) и скопируйте параметры:
 
 ``` yaml
 # Identity service configuration
@@ -31,7 +31,7 @@ IDENTITY_SKIP_FINGERPRINT=true                         #Например: иде
 ## Шаг 2. Скопировать открытый ключ подписания JWT токена
 
 Найдите публичный ключ подписи Identity (в файле `/opt/services/z-config/identity/.rulink/jwt_public.key`) и скопируйте файл в директорию сервиса
-`/opt/services/z-config/{ВАШ СЕРВИС}/.rulink/jwt_public.key`).
+`/opt/services/z-config/{ВАШ СЕРВИС}/.rulink/jwt_public.key`.
 
 ## Шаг 3. Перезапустите сервис
 

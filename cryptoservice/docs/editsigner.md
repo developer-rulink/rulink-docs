@@ -1,7 +1,7 @@
 # Редактирование файла подписи
 
 !!! info "Кстати"
-    Этот функционал можно использовать бесплатно и без регистрации. Работает здесь:[https://crypto-demo.rulink.io/signatures/editors](https://crypto-demo.rulink.io/signatures/editors?utm_source=support&utm_medium=crypto&utm_campaign=edit).
+    Этот функционал можно использовать бесплатно и без регистрации. Работает здесь: [https://crypto-demo.rulink.io/signatures/editors](https://crypto-demo.rulink.io/signatures/editors?utm_source=support&utm_medium=crypto&utm_campaign=edit).
 
 ==Загрузите файлы электронной подписи== (чаще всего это файлы с расширением .sig).
 Можно загрузить несколько файлов одновременно (до 10 файлов).

@@ -15,7 +15,7 @@
 Нажмите кнопку =="Проверить"==.
 
 !!! info "Кстати"
-    Этот функционал можно использовать бесплатно и без регистрации. Работает здесь:[https://crypto-demo.rulink.io/signatures](https://crypto-demo.rulink.io/signatures?utm_source=support&utm_medium=crypto&utm_campaign=verification).
+    Этот функционал можно использовать бесплатно и без регистрации. Работает здесь: [https://crypto-demo.rulink.io/signatures](https://crypto-demo.rulink.io/signatures?utm_source=support&utm_medium=crypto&utm_campaign=verification).
 
 <figure markdown="span">
   ![Загрузка файлов для проверки](https://rulink.io/images/image-002.png){ width="500" }

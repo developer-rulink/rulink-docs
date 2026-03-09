@@ -71,4 +71,4 @@ sudo bash -c /opt/services/z-config/generate-selfsigned-ssl.sh crypto.oblakotech
 
 ## Настройка публикации сервиса
 
-Полная статья как опубликавать сервис в разделе [nginx](nginx.md?utm_source=support&utm_medium=system)
+Полная статья о том, как опубликовать сервис, — в разделе [nginx](nginx.md?utm_source=support&utm_medium=system).

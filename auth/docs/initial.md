@@ -45,7 +45,7 @@ sudo bash -c /opt/services/z-config/generate-jwt-keypair.sh
 - параметры подключения к базе данных
 - параметры для формирования JWT и cookies
 
-Параметры сервиса задаются в файле `/opt/services/z-config/rulink-compose/.env`
+Параметры сервиса задаются в файле `/opt/services/z-config/rulink-compose/.env`.
 
 ``` yaml
 # Common Database configuration
