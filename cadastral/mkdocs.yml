@@ -1,4 +1,4 @@
-site_name: Получение кадастровой информации
+site_name: Кадастровые данные для ваших систем и ИИ-агентов
 site_url: https://rulink.io/support/cadastral
 copyright: 2026 &copy; ООО Облакотех
 theme:
@@ -53,4 +53,4 @@ plugins:
         ru:
           name: Russian
           build: true
-          site_name: "Сервис кадастровой информации"
+          site_name: "Кадастровые данные для ваших систем и ИИ-агентов"
