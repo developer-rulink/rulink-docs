@@ -67,8 +67,9 @@ volumes:
 Для старта приложения необходимо предоставить файлы `appsettings.json` и `nlog.config` в каталоге `resources/` volume на хосте.
 
 Приложение ожидает найти файлы в каталоге `/opt/resources/`:
-- `/opt/resources/appsettings.json` — файл конфигурации. Загрузить с [https://rulink.io/public/resources/appsettings.json](https://rulink.io/public/resources/appsettings.json)
-- `/opt/resources/nlog.config` — конфигурация логирования. Загрузить с [https://rulink.io/public/resources/nlog.config](https://rulink.io/public/resources/nlog.config)
+
+- `/opt/resources/appsettings.json` — файл конфигурации. Загрузить тут: [https://rulink.io/public/resources/appsettings.json](https://rulink.io/public/resources/appsettings.json)  
+- `/opt/resources/nlog.config` — конфигурация логирования. Загрузить тут: [https://rulink.io/public/resources/nlog.config](https://rulink.io/public/resources/nlog.config)
 
 ### Переменные окружения
 
@@ -76,20 +77,20 @@ volumes:
 Образец файла `.env`:
 
 ```text
-# CadastralService WebApp settings
+# CadastralService settings
 CADASTRALSRV_APIKEY=01a0dafe-6d52-7776-aad2-2c4823e01a28
 
-# CadastralService WebApp Open API configuration
+# CadastralService Open API configuration
 CADASTRALSRV_CONTACT_NAME="ПОДДЕРЖКА ОБЛАКОТЕХ"
 CADASTRALSRV_CONTACT_EMAIL=support@rulink.io
 CADASTRALSRV_CONTACT_URL=https://rulink.io/support/cadastral
 
-# CadastralService WebApp PROXY Settings
+# CadastralService PROXY FOR BROWSER 
 #CADASTRALSRV_PROXY_URL = https://myproxy.example.com:8080
 #CADASTRALSRV_PROXY_USERNAME=myusername
 #CADASTRALSRV_PROXY_PASSWORD=mypassword
 
-# CadastralService WebApp CAPTCHA Settings
+# CAPTCHAService
 CAPTCHA_SERVICE_URL=https://ocr.rulink.io/api/v1/
 ```
 
@@ -105,7 +106,6 @@ CAPTCHA_SERVICE_URL=https://ocr.rulink.io/api/v1/
 | `CADASTRALSRV_PROXY_URL` | нет | Прокси для исходящих запросов |
 | `CADASTRALSRV_PROXY_USERNAME` | нет | Логин прокси |
 | `CADASTRALSRV_PROXY_PASSWORD` | нет | Пароль прокси |
-
 
 ### Пример `docker compose`
 
